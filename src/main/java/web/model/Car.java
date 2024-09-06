@@ -1,4 +1,7 @@
-package model;
+package web.model;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
 
 public class Car {
 
@@ -42,7 +45,7 @@ public class Car {
     @Override
     public String toString() {
         return "Car{" +
-                "model='" + model + '\'' +
+                "model=" + model +
                 ", series=" + series +
                 ", year=" + year +
                 '}';
