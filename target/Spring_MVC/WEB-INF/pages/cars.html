@@ -5,13 +5,13 @@
     <title>Машины</title>
 </head>
 <body>
-<div style="margin: auto 0">
-<h1 style="font-weight: bold; font-size: 24px">Список машин</h1>
-<ul>
-    <th:block th:each="car : ${carList}">
-    <li style="color: blue" th:text="${car}"></li>
-    </th:block>
-</ul>
+<div style="position: relative">
+    <h1 style="font-weight: bold; font-size: 24px">Список машин</h1>
+    <ul>
+        <th:block th:each="car : ${carList}">
+            <li style="color: blue" th:text="${car}"></li>
+        </th:block>
+    </ul>
 </div>
 </body>
 </html>

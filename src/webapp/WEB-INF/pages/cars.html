@@ -6,12 +6,12 @@
 </head>
 <body>
 <div style="position: relative">
-<h1 style="font-weight: bold; font-size: 24px">Список машин</h1>
-<ul>
-    <th:block th:each="car : ${carList}">
-    <li style="color: blue" th:text="${car}"></li>
-    </th:block>
-</ul>
+    <h1 style="font-weight: bold; font-size: 24px">Список машин</h1>
+    <ul>
+        <th:block th:each="car : ${carList}">
+            <li style="color: blue" th:text="${car}"></li>
+        </th:block>
+    </ul>
 </div>
 </body>
 </html>
