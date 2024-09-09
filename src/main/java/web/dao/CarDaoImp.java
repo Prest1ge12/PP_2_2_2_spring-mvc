@@ -10,6 +10,7 @@ import java.util.List;
 public class CarDaoImp implements CarDao {
     @Override
     public List<Car> getCars() {
+
         List<Car> carList = new ArrayList<>();
         carList.add(new Car(1988, 12, "Porsche"));
         carList.add(new Car(1999, 13, "Ferrari"));
@@ -18,7 +19,7 @@ public class CarDaoImp implements CarDao {
         carList.add(new Car(2020, 16, "Mercedes"));
 
         // По 5 пункту не сработает при добавлении 6-го авто не понял.
-        // При добавлении здесь авто и перезапуске томкат сервера проверил, вроде работает по заданию
+        // При добавлении здесь авто и перезапуске томкат сервера проверил, вроде работает по заданию.
 
         carList.add(new Car(2022, 17, "SomeCar1"));
         carList.add(new Car(2012, 19, "SomeCar2"));
